@@ -31,11 +31,12 @@ public class HomeController {
     }
 
     private void sleep()  {
-        try {
-            Thread.sleep(3000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+        //Sleep method to add soem latency in service so we can see block UI
+//        try {
+//            Thread.sleep(3000);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
     }
 
 

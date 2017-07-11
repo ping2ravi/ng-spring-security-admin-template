@@ -33,13 +33,6 @@
 </head>
 
 <body class="ng-cloak">
-	<!--<div ng-controller="navigation as nav" class="container">-->
-		<!--<ul class="nav nav-pills" role="tablist">-->
-			<!--<li ng-class="{active:nav.tab('home')}"><a href="#/">home(T01)</a></li>-->
-			<!--<li ng-class="{active:nav.tab('navigation')}"><a href="#/login">login</a></li>-->
-			<!--<li ng-show="authenticated"><a href="" ng-click="nav.logout()">logout</a></li>-->
-		<!--</ul>-->
-	<!--</div>-->
 	<div id="wrapper" >
 
 		<!-- Navigation -->
@@ -175,9 +168,6 @@
 					<li>
 						<a href="/admin/ext/charts"><i class="fa fa-fw fa-desktop"></i> Charts</a>
 					</li>
-					<li>
-						<a href="#" ng-click="logout()"><i class="fa fa-fw fa-table"></i> Logout</a>
-					</li>
 					<!-- Following HTMl do not exists-->
 					<li>
 						<a href="/admin/ext/forms"><i class="fa fa-fw fa-edit"></i> Forms</a>
@@ -204,6 +194,9 @@
 					</li>
 					<li>
 						<a href="/admin/ext/index-rtl"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+					</li>
+					<li>
+						<a href="#" ng-click="logout()"><i class="fa fa-fw fa-power-off"></i> Logout</a>
 					</li>
 				</ul>
 			</div>

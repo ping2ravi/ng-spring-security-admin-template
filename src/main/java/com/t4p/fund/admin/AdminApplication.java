@@ -45,7 +45,7 @@ public class AdminApplication {
 			http
 				.httpBasic().and()
 				.authorizeRequests()
-					.antMatchers("/admin/**/*.html","/index_new.html", "/home.html", "/login.html", "/", "/t01/**").permitAll()
+					.antMatchers("/admin/**/*.html", "/", "/t01/**").permitAll()
 					.anyRequest().authenticated()
 					.and()
 				.csrf()
