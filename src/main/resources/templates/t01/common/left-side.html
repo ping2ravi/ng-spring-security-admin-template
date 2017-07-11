@@ -1,0 +1,51 @@
+<div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav side-nav" ng-hide="authenticated">
+        <li class="active">
+            <a href="/login"><i class="fa fa-fw fa-dashboard"></i> Login</a>
+        </li>
+    </ul>
+    <ul class="nav navbar-nav side-nav" ng-show="authenticated">
+        <li class="active">
+            <a href="/admin/dashboard"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+        </li>
+        <li>
+            <a href="/admin/user/profile"><i class="fa fa-fw fa-bar-chart-o"></i> Profile</a>
+        </li>
+        <li class="active">
+            <a href="/login"><i class="fa fa-fw fa-dashboard"></i> Login</a>
+        </li>
+        <li>
+            <a href="/admin/ext/charts"><i class="fa fa-fw fa-desktop"></i> Charts</a>
+        </li>
+        <li>
+            <a href="#" ng-click="logout()"><i class="fa fa-fw fa-table"></i> Logout</a>
+        </li>
+        <!-- Following HTMl do not exists-->
+        <li>
+            <a href="/admin/ext/forms"><i class="fa fa-fw fa-edit"></i> Forms</a>
+        </li>
+        <li>
+            <a href="/admin/ext/bootstrap-elements"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+        </li>
+        <li>
+            <a href="/admin/ext/bootstrap-grid"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
+        </li>
+        <li>
+            <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
+            <ul id="demo" class="collapse">
+                <li>
+                    <a href="#">Dropdown Item</a>
+                </li>
+                <li>
+                    <a href="#">Dropdown Item</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <a href="/admin/ext/blank-page"><i class="fa fa-fw fa-file"></i> Blank Page</a>
+        </li>
+        <li>
+            <a href="/admin/ext/index-rtl"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
+        </li>
+    </ul>
+</div>
