@@ -82,7 +82,7 @@ adminApp.directive('date', function (dateFilter) {
     };
 })
 
-adminApp.controller('navigation',function($scope, $rootScope, $http, $location, $route) {
+adminApp.controller('navigation', ['$scope', '$rootScope', '$http', '$location', '$route', function($scope, $rootScope, $http, $location, $route) {
 			
 			var authenticate = function(credentials, callback) {
 
@@ -133,13 +133,13 @@ adminApp.controller('navigation',function($scope, $rootScope, $http, $location, 
 
 
 
-});
+}]);
 
-adminApp.controller('home', function($http) {
+adminApp.controller('home', ['$http', function($http) {
 	$http.get('/resource/').then(function(response) {
 		$scope.greeting = response.data;
 	})
-});
+}]);
 
 adminApp.controller('profile', function($http) {
 });

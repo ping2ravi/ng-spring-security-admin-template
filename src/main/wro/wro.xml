@@ -7,4 +7,24 @@
     <js>webjar:angularjs/@angularjs.version@/angular-route.min.js</js>
     <js>webjar:angularjs/@angularjs.version@/angular-cookies.min.js</js>
    </group>
+
+  <group name="template01">
+    <css>file:@project.basedir@/src/main/resources/static/t01/css/bootstrap.min.css</css>
+    <css>file:@project.basedir@/src/main/resources/static/t01/css/sb-admin.css</css>
+    <css>file:@project.basedir@/src/main/resources/static/t01/font-awesome/css/font-awesome.css</css>
+    <css>file:@project.basedir@/src/main/resources/static/js/block/angular-block-ui.min.css</css>
+
+
+    <js>file:@project.basedir@/src/main/resources/static/t01/js/jquery.js</js>
+
+    <!-- Bootstrap Core JavaScript -->
+    <js>file:@project.basedir@/src/main/resources/static/t01/js/bootstrap.min.js</js>
+    <js>file:@project.basedir@/src/main/resources/static/js/block/angular-block-ui.min.js</js>
+
+  </group>
+
+  <group name="application-custom">
+    <js>file:@project.basedir@/src/main/resources/static/js/application.js</js>
+
+  </group>
 </groups>

@@ -4,3 +4,15 @@ security:
 logging:
   level:
     org.springframework.security: DEBUG
+
+
+multipart:
+  maxFileSize: 512KB
+  maxRequestSize: 512KB
+spring:
+  resources:
+    chain:
+      strategy:
+        content:
+          enabled: true
+          paths: /**
