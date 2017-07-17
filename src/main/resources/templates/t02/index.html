@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="admin" class="no-js lt-ie9 lt-ie8 lt-ie7" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="admin" class="no-js lt-ie9 lt-ie8" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="admin" class="no-js lt-ie9" xmlns:th="http://www.thymeleaf.org"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html xmlns:th="http://www.thymeleaf.org" lang="en" ng-app="admin" class="no-js"> <!--<![endif]-->
+
+<head>
+
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+
+    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+
+    <div th:include="t02/common/style"/>
+    <base href="/"/>
+    <style type="text/css">
+[ng\:cloak], [ng-cloak], .ng-cloak {
+	display: none !important;
+}
+
+
+    </style>
+</head>
+
+<body class="ng-cloak">
+
+<div id="wrapper">
+
+    <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div th:include="t02/common/topbar"/>
+        <div th:include="t02/common/left-side"/>
+
+
+        <!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper" ng-view="test">
+
+    </div>
+    <!-- /#page-wrapper -->
+
+</div>
+<!-- /#wrapper -->
+<div th:include="t02/common/scripts"/>
+
+</body>
+
+</html>
