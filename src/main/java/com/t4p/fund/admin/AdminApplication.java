@@ -38,7 +38,7 @@ public class AdminApplication {
 			http
 				.httpBasic().and()
 				.authorizeRequests()
-					.antMatchers("/admin/**/*.html", "/", "/t01/**", "/t02/**", "/css/*", "/js/*", "/fonts/*", "/login").permitAll()
+					.antMatchers("/admin/**/*.html", "/", "/t01/**", "/t02/**", "/t03/**", "/css/*", "/js/*", "/fonts/*", "/login").permitAll()
 					.anyRequest().authenticated()
 					.and()
 				.csrf()

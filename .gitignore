@@ -4,5 +4,4 @@ target
 **/target
 **/*.class
 **/webapp
-build
 .idea

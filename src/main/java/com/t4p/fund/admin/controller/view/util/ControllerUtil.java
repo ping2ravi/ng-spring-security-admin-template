@@ -15,7 +15,7 @@ import java.util.Set;
 @Component
 public class ControllerUtil {
 
-    private final static String DEFAULT_TEMPLATE = "t02";
+    private final static String DEFAULT_TEMPLATE = "t03";
     @Value("${website.domain:https://www.swarajindia.org}")
     private String websiteDomain;
     @Autowired
@@ -26,6 +26,7 @@ public class ControllerUtil {
         validTemplates = new HashSet<>();
         validTemplates.add("t01");
         validTemplates.add("t02");
+        validTemplates.add("t03");
     }
 
     public void addGenericData(HttpServletRequest httpServletRequest, ModelAndView context) {
@@ -56,7 +57,7 @@ public class ControllerUtil {
     public String getTemplate(HttpServletRequest request, HttpServletResponse response) {
         String reqTemplate = request.getParameter("template");
         if (reqTemplate != null) {
-            response.addCookie(new Cookie("template", "reqTemplate"));
+            response.addCookie(new Cookie("template", reqTemplate));
             return reqTemplate;
         }
         if (!validTemplates.contains(reqTemplate)) {

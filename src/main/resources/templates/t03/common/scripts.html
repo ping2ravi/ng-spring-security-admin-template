@@ -1,0 +1,30 @@
+<!-- jQuery UI 1.11.4 -->
+<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+
+<!-- Morris.js charts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<!-- daterangepicker -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+
+</script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<!--<script src="t03/dist/js/pages/dashboard.js"></script>-->
+<!-- AdminLTE for demo purposes -->
+<!--<script src="t03/dist/js/demo.js"></script>-->
+
+<script th:src="${@mvcResourceUrlProvider.getForLookupPath('/js/t03.js')}" rel="stylesheet"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-resource.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+
+<!-- Optionally, you can add Slimscroll and FastClick plugins.
+     Both of these plugins are recommended to enhance the
+     user experience. Slimscroll is required when using the
+     fixed layout. -->
+<script th:src="${@mvcResourceUrlProvider.getForLookupPath('/ext/block/angular-block-ui.js')}"/>
+
+<script th:src="${@mvcResourceUrlProvider.getForLookupPath('/t03/application.js')}" rel="stylesheet"/>
